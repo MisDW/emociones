@@ -1,0 +1,82 @@
+:root{
+    --color: #47AE98;
+}
+
+#nav{
+    background-color: var(--color);
+}
+
+#container_app{
+    /* background-image: url("./img/background.jpg");
+    background-size: auto; */
+    position: relative;
+    inset: 0px;
+    z-index: 2;
+    color: #ffff;
+    overflow: auto;
+}
+
+/* #container_app::after{
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.484);
+    z-index: -1;
+} */
+
+.btn-custom{
+    border-radius: 10px;
+    border: 0px;
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    margin: 5px;
+    box-shadow: 5px 5px 15px #00000056;
+}
+
+.btn-custom:hover{
+    animation:shake-left-right 1s linear both;
+    transition: 0.3s ease;
+}
+
+@keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
+
+#usuarios{
+    cursor: pointer;
+}
+
+#feliz{
+    color: #8AD689;
+}
+
+#feliz:hover{
+    color: #ffff;
+    background-color: #8AD689;
+}
+
+#enojado{
+    color: #D6899D;
+}
+
+#enojado:hover{
+    color: #ffff;
+    background-color: #D6899D;
+}
+
+#asustado{
+    color: #8997D6;
+}
+
+#asustado:hover{
+    color: #ffff;
+    background-color: #8997D6;
+}
+
+#triste{
+    color: #9589D6;
+}
+
+#triste:hover{
+    color: #ffff;
+    background-color: #8997D6;
+}
